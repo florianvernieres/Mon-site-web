@@ -20,31 +20,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8520be99-2e66-4ed2-83ec-467333d9669c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/img/avataaars.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/portfolio/cabin.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/portfolio/cake.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/portfolio/circus.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/portfolio/game.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/portfolio/safe.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/portfolio/submarine.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/mail/contact_me.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/mail/contact_me.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/mail/jqBootstrapValidation.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/scripts.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/styles/styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/index/show.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/MonSiteWeb.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/MonSiteWeb.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/styles/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/IndexController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/index/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index/index.html.twig" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
   </component>
@@ -155,6 +149,8 @@
       <path value="$PROJECT_DIR$/vendor/symfony/config" />
       <path value="$PROJECT_DIR$/vendor/symfony/routing" />
       <path value="$PROJECT_DIR$/vendor/symfony/webpack-encore-bundle" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/doctrine-fixtures-bundle" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/data-fixtures" />
     </include_path>
   </component>
   <component name="ProjectId" id="1keBGnhjxoeWamdKhna73uBdn9l" />
@@ -163,9 +159,10 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mariadb" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Montemplate" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../MaSuperAgence" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -183,7 +180,24 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1606051083354</updated>
-      <workItem from="1606051084455" duration="6208000" />
+      <workItem from="1606051084455" duration="6402000" />
+      <workItem from="1606287991322" duration="3635000" />
+      <workItem from="1606293005281" duration="29000" />
+      <workItem from="1606293132317" duration="613000" />
+      <workItem from="1606293829307" duration="696000" />
+      <workItem from="1606296680891" duration="135000" />
+      <workItem from="1606375298308" duration="5189000" />
+      <workItem from="1606384020479" duration="909000" />
+      <workItem from="1606394530278" duration="2853000" />
+      <workItem from="1606397666780" duration="108000" />
+      <workItem from="1606405783746" duration="2920000" />
+      <workItem from="1606410704484" duration="649000" />
+      <workItem from="1606413989514" duration="614000" />
+      <workItem from="1606560000137" duration="6000" />
+      <workItem from="1606583268481" duration="369000" />
+      <workItem from="1606638259609" duration="1030000" />
+      <workItem from="1606676290235" duration="29000" />
+      <workItem from="1606746049309" duration="11079000" />
     </task>
     <servers />
   </component>
@@ -200,11 +214,28 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1606053108628">
+    <state x="552" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1606378055384">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040/-1920.26.1920.1040@0.0.1920.1040" timestamp="1606053108628" />
+    <state x="552" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/-1920.26.1920.1040@0.0.1920.1040" timestamp="1606378055384" />
+    <state x="765" y="236" key="#com.intellij.ide.util.MemberChooser" timestamp="1606406508406">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="765" y="236" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/-1920.26.1920.1040@0.0.1920.1040" timestamp="1606406508406" />
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1606407221542">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040/-1920.26.1920.1040@0.0.1920.1040" timestamp="1606407221542" />
+    <state width="196" height="457" key="HiddenNamespacesPopup" timestamp="1606378062911">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="196" height="457" key="HiddenNamespacesPopup/0.0.1920.1040/-1920.26.1920.1040@0.0.1920.1040" timestamp="1606378062911" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1606407851828">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.26.1920.1040@0.0.1920.1040" timestamp="1606407851828" />
   </component>
 </project>
