@@ -11,8 +11,12 @@ security:
             security: false
         main:
             anonymous: true
+            logout:
+                path: /logout
+                target: /
+
             lazy: true
-            provider: users_in_memory
+            provider: from_database
 
             # activate different ways to authenticate
             http_basic: true
@@ -20,7 +24,8 @@ security:
 
             # https://symfony.com/doc/current/security/impersonating_user.html
             # switch_user: true
-
+            form_login:
+                check_path: login
     # Easy way to control access for large sections of your site
     # Note: Only the *first* access control that matches will be used
     access_control:

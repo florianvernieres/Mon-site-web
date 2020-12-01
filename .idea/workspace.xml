@@ -20,21 +20,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8520be99-2e66-4ed2-83ec-467333d9669c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/templates/admin/projet/edit.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/admin/projet/index.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/admin/projet/new.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/SecurityController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/security/login.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/twig.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/twig.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/services.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/services.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/IndexController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/IndexController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DataFixtures/AppFixtures.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataFixtures/AppFixtures.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Repository/ProjetRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/ProjetRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/routes.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/index/backOffice.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/projet/_form.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/index/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -167,6 +158,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -206,7 +198,7 @@
       <workItem from="1606676290235" duration="29000" />
       <workItem from="1606746049309" duration="12769000" />
       <workItem from="1606761722214" duration="5072000" />
-      <workItem from="1606807967271" duration="14909000" />
+      <workItem from="1606807967271" duration="20655000" />
     </task>
     <servers />
   </component>
@@ -234,22 +226,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="685" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/-1920.26.1920.1040@0.0.1920.1040" timestamp="1606818285399" />
-    <state x="765" y="236" key="#com.intellij.ide.util.MemberChooser" timestamp="1606406508406">
+    <state x="765" y="236" key="#com.intellij.ide.util.MemberChooser" timestamp="1606827266791">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="765" y="236" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/-1920.26.1920.1040@0.0.1920.1040" timestamp="1606406508406" />
-    <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1606811034002">
+    <state x="765" y="236" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/-1920.26.1920.1040@0.0.1920.1040" timestamp="1606827266791" />
+    <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1606829480751">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040/-1920.26.1920.1040@0.0.1920.1040" timestamp="1606811034002" />
+    <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040/-1920.26.1920.1040@0.0.1920.1040" timestamp="1606829480751" />
     <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1606763703188">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040/-1920.26.1920.1040@0.0.1920.1040" timestamp="1606763703188" />
-    <state width="196" height="457" key="HiddenNamespacesPopup" timestamp="1606378062911">
+    <state width="196" height="457" key="HiddenNamespacesPopup" timestamp="1606828735428">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="196" height="457" key="HiddenNamespacesPopup/0.0.1920.1040/-1920.26.1920.1040@0.0.1920.1040" timestamp="1606378062911" />
+    <state width="196" height="457" key="HiddenNamespacesPopup/0.0.1920.1040/-1920.26.1920.1040@0.0.1920.1040" timestamp="1606828735428" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1606407851828">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
