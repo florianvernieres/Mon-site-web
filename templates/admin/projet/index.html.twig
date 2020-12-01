@@ -1,0 +1,62 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}gérer les projets {% endblock %}
+
+{% block body %}
+    <body class="masthead  text-black text-center">
+        <div class="container mt-4">
+            <!-- Entête gestion des projets -->
+            <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Gérer les projets</h2>
+            <!-- Icone division zone -->
+            <div class="divider-custom">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon"><i class="fas fa-cogs"></i></div>
+                <div class="divider-custom-line"></div>
+            </div>
+
+            {% for message in app.flashes('success') %}
+                <div class="alert alert-success">{{ message }}</div>
+            {% endfor %}
+
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Titre</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for projet in projets %}
+                        <tr>
+                            <td>{{ projet.Nom }}</td>
+                            <td>
+                                <a href="{{ path('admin.projet.edit', {id: projet.id}) }}" class=" btn btn-secondary">Editer <i class="fas fa-pen-alt"></i></a>
+                                <form method="post" action="{{ path('admin.projet.delete', {id: projet.id}) }}" style="display: inline-block" onsubmit="return confirm('Voulez-vous vraiment supprimer ce bien ?')">
+                                    <input type="hidden" name="_method" value="DELETE">
+                                    <input type="hidden" name="_token" value="{{ csrf_token('delete' ~ projet.id) }}">
+                                    <button class="btn btn-danger">Supprimer <i class="fas fa-trash-alt"></i></button>
+                                </form>
+                            </td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+
+            <div class="text-right">
+                <a href="{{ path('admin.projet.new') }}" class="btn btn-primary">Créer un nouveau projet <i class="fas fa-folder-plus"></i></a>
+            </div>
+        </div>
+
+        <div class="container mt-4">
+            <!-- Entête gestion des projets -->
+            <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Gérer les informations personnelles</h2>
+            <!-- Icone division zone -->
+            <div class="divider-custom">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon"><i class="fas fa-user-cog"></i></div>
+                <div class="divider-custom-line"></div>
+            </div>
+        </div>
+    </body>
+
+{% endblock %}
