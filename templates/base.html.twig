@@ -57,26 +57,22 @@
                     <div class="col-lg-4 mb-5 mb-lg-0">
                         <h4 class="text-uppercase mb-4">Adresse</h4>
                         <p class="lead mb-0">
-                            15 chemin de Las Caguères
-                            <br />
-                            31330 Grenade
+                            {% for information in informations %} {{ information.adresse }}{% endfor %}
                         </p>
                     </div>
                     <!-- Footer Social Icons-->
                     <div class="col-lg-4 mb-5 mb-lg-0">
                         <h4 class="text-uppercase mb-4">Mes réseaux sociaux</h4>
-                        <a class="btn btn-outline-light btn-social mx-1" href="#"><i class="fab fa-fw fa-facebook-f"></i></a>
-                        <a class="btn btn-outline-light btn-social mx-1" href="#"><i class="fab fa-fw fa-github"></i></a>
-                        <a class="btn btn-outline-light btn-social mx-1" href="#"><i class="fab fa-fw fa-linkedin-in"></i></a>
-                        <a class="btn btn-outline-light btn-social mx-1" href="#"><i class="fab fa-fw fa-instagram"></i></a>
+                        <a class="btn btn-outline-light btn-social mx-1" href="{% for information in informations %}{{ information.facebook }}{% endfor %}"><i class="fab fa-fw fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-social mx-1" href="{% for information in informations %}{{ information.github }}{% endfor %}"><i class="fab fa-fw fa-github"></i></a>
+                        <a class="btn btn-outline-light btn-social mx-1" href="{% for information in informations %}{{ information.linkedin }}{% endfor %}"><i class="fab fa-fw fa-linkedin-in"></i></a>
+                        <a class="btn btn-outline-light btn-social mx-1" href="{% for information in informations %}{{ information.instagram }}{% endfor %}"><i class="fab fa-fw fa-instagram"></i></a>
                     </div>
                     <!-- Footer About Text-->
                     <div class="col-lg-4">
                         <h4 class="text-uppercase mb-4">Ma formation</h4>
                         <p class="lead mb-0">
-                            La licence MIASHS option MIAGe est une formation basé sur la programmation et la gestion de projet en entreprise<br />
-                            <a href="http://startbootstrap.com">Start Bootstrap</a>
-                            .
+                          {% for information in informations%} {{ information.formation }} {% endfor %}
                         </p>
                     </div>
                 </div>

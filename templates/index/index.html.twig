@@ -19,7 +19,7 @@
                     <div class="divider-custom-line"></div>
                 </div>
                 <!-- Sous-titre introduction -->
-                <p class="masthead-subheading font-weight-light mb-0">Etudiant en licence MIAGe - en alternance chez Médialliance</p>
+                <p class="masthead-subheading font-weight-light mb-0">{% for information in informations %}{{ information.statut }}{% endfor %}</p>
             </div>
         </header>
 
@@ -101,13 +101,13 @@
                 <!-- Icon Divider-->
                 <div class="divider-custom divider-light">
                     <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-icon"><i class="fas fa-info-circle"></i></div>
                     <div class="divider-custom-line"></div>
                 </div>
                 <!-- Texte présentation -->
                 <div class="row">
-                    <div class="col-lg-4 ml-auto"><p class="lead">Etudiant en licence MIAGe, j'ai commencé mon parcours scolaire par un BAC S option SI, ISN. Je me suis ensuite orienté vers un DUT Informatique.Mon objectif est est dans un premier de devenir développeur et évoluer en tant que chef de projet dans un second temps.</p></div>
-                    <div class="col-lg-4 mr-auto"><p class="lead">Etant passionné par les jeux vidéos étant petit, j'ai voulu savoir comment était "fabriqué" un jeu vidéo. C'est pour cela que j'ai orienté mon parcours scolaire dans le domaine de l'informatique. J'aime le sport et plus particulièrement le tennis et le cyclisme sur route que je pratique depuis 8 ans. </p></div>
+                    <div class="col-lg-4 ml-auto"><p class="lead">{% for information in informations %}{{ information.description }}{% endfor %}</p></div>
+                    <div class="col-lg-4 mr-auto"><p class="lead">{% for information in informations %}{{ information.description2 }}{% endfor %} </p></div>
                 </div>
                 <!-- Bouton télécharger CV-->
                 <div class="text-center mt-4">
@@ -165,7 +165,7 @@
                             </div>
                             <br />
                             <div id="success"></div>
-                            <div class="form-group"><button class="btn btn-primary btn-xl" id="sendMessageButton" type="submit">Send</button></div>
+                            <div class="form-group"><button class="btn btn-primary btn-xl" id="sendMessageButton" type="submit">Envoyer</button></div>
                         </form>
                     </div>
                 </div>

@@ -2,17 +2,17 @@
 
 {% block body %}
     <body class="masthead  text-black text-center">
-    <div class="container mt-4">
-        <!-- Entête edition des projets -->
-        <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">créer un nouveau projet</h2>
-        <!-- Icone division zone -->
-        <div class="divider-custom">
-            <div class="divider-custom-line"></div>
-            <div class="divider-custom-icon"><i class="fas fa-plus"></i></div>
-            <div class="divider-custom-line"></div>
+        <div class="container mt-4">
+            <!-- Entête edition des projets -->
+            <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">créer un nouveau projet</h2>
+            <!-- Icone division zone -->
+            <div class="divider-custom">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon"><i class="fas fa-plus"></i></div>
+                <div class="divider-custom-line"></div>
+            </div>
+            {{ include('admin/projet/_form.html.twig', { button: 'Créer '}) }}
+            <br />
         </div>
-        {{ include('admin/projet/_form.html.twig', { button: 'Créer '}) }}
-        <br />
-    </div>
     </body>
 {% endblock %}

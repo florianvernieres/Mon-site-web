@@ -62,6 +62,16 @@ class Information
      */
     private $nom;
 
+    /**
+     * @ORM\Column(type="string", length=255, nullable=true)
+     */
+    private $instagram;
+
+    /**
+     * @ORM\Column(type="text", nullable=true)
+     */
+    private $description2;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -171,6 +181,30 @@ class Information
     public function setNom(string $nom): self
     {
         $this->nom = $nom;
+
+        return $this;
+    }
+
+    public function getInstagram(): ?string
+    {
+        return $this->instagram;
+    }
+
+    public function setInstagram(?string $instagram): self
+    {
+        $this->instagram = $instagram;
+
+        return $this;
+    }
+
+    public function getDescription2(): ?string
+    {
+        return $this->description2;
+    }
+
+    public function setDescription2(?string $description2): self
+    {
+        $this->description2 = $description2;
 
         return $this;
     }

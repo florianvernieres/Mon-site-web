@@ -8,6 +8,10 @@ use Doctrine\Persistence\ObjectManager;
 
 class ProjetFixtures extends Fixture
 {
+    /**
+     * permet de créer des objets fixtures
+     * @param ObjectManager $manager objet possedant les caracteristiques données
+     */
     public function load(ObjectManager $manager)
     {
         for ($i = 1; $i <= 10; $i++ ){

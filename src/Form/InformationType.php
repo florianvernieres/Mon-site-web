@@ -12,15 +12,17 @@ class InformationType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
+            ->add('nom')
             ->add('description')
+            ->add('description2')
             ->add('statut')
             ->add('cv')
             ->add('adresse')
             ->add('facebook')
             ->add('github')
             ->add('linkedIn')
+            ->add('instagram')
             ->add('formation')
-            ->add('nom')
         ;
     }
 

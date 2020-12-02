@@ -2,9 +2,12 @@
 
 namespace App\Controller;
 
+
 use App\Entity\Information;
 use App\Entity\Projet;
+use App\Form\InformationType;
 use App\Form\ProjetType;
+use App\Repository\InformationRepository;
 use App\Repository\ProjetRepository;
 use Doctrine\ORM\EntityManager;
 use Doctrine\ORM\EntityManagerInterface;
@@ -23,6 +26,11 @@ class IndexController extends AbstractController{
     private $repository;
 
     /**
+     * @var InformationRepository
+     */
+    private $repositoryInfos;
+
+    /**
      * @var EntityManager
      */
     private $em;
@@ -31,9 +39,11 @@ class IndexController extends AbstractController{
      * IndexController constructor.
      * @param ProjetRepository $repository
      * @param EntityManagerInterface $em
+     * @param InformationRepository $repositoryInformation
      */
-    public function __construct(ProjetRepository $repository, EntityManagerInterface $em){
+    public function __construct(ProjetRepository $repository, EntityManagerInterface $em, InformationRepository $repositoryInformation){
         $this->repository = $repository;
+        $this->repositoryInfos = $repositoryInformation;
         $this->em = $em;
     }
 
@@ -46,12 +56,17 @@ class IndexController extends AbstractController{
         $repo = $this->getDoctrine()->getRepository(Projet::class);
 
         $projets = $repo->findAll();
+        $informations = $this->repositoryInfos->findAll();
 
         return $this->render('index/index.html.twig', [
             'controller_name' => 'IndexController',
-            'projets' => $projets
+            'projets' => $projets,
+            'informations'=>$informations
         ]);
     }
+
+
+
 
     /**
      * création d'un nouveau projet
@@ -65,6 +80,7 @@ class IndexController extends AbstractController{
         $form = $this->createForm(ProjetType::class,$projet);
         $form->handleRequest($request); //permet de gérer la requête, compare le nouvelle valeur par rapport à l'ancienne
 
+        $informations = $this->repositoryInfos->findAll();
         /* si le formulaire a été changé et qu'il est valide */
         if ($form->isSubmitted() && $form->isValid()){
             $this->em->persist($projet);
@@ -79,7 +95,41 @@ class IndexController extends AbstractController{
             return $this->redirectToRoute('admin.projet.index');
         }
         return $this->render('admin/projet/new.html.twig',[
+            'informations'=>$informations,
             'projet' => $projet,
+            'form'=> $form->createView()
+        ]);
+    }
+
+    /**
+     * création d'un nouveau projet
+     * @Route ("admin/projet/information/createInformation", name="admin.projet.information.newInformation")
+     * @param Request $request
+     * @return Response
+     * @throws ORMException
+     */
+    public function newInformation(Request $request){
+        $information = new Information();
+        $form = $this->createForm(InformationType::class,$information);
+        $form->handleRequest($request); //permet de gérer la requête, compare le nouvelle valeur par rapport à l'ancienne
+
+        $informations = $this->repositoryInfos->findAll();
+        /* si le formulaire a été changé et qu'il est valide */
+        if ($form->isSubmitted() && $form->isValid()){
+            $this->em->persist($information);
+            if (isset($this)) {
+                try {
+                    $this->em->flush();
+                } catch (OptimisticLockException $e) {
+                } catch (ORMException $e) {
+                }
+            }
+            $this->addFlash('success', 'Vos informations  ont  été crées avec succès');
+            return $this->redirectToRoute('admin.projet.index');
+        }
+        return $this->render('admin/projet/information/newInformation.html.twig',[
+            'informations'=>$informations,
+            'information' => $information,
             'form'=> $form->createView()
         ]);
     }
@@ -92,7 +142,9 @@ class IndexController extends AbstractController{
      * @return Response
      */
     public function show(Projet $projet){
+        $informations = $this->repositoryInfos->findAll();
         return $this->render('index/show.html.twig', [
+            'informations'=>$informations,
             'projet' =>$projet
         ]);
     }
@@ -106,9 +158,11 @@ class IndexController extends AbstractController{
      */
     public function admin(){
         $projets = $this->repository->findAll();
+        $informations = $this->repositoryInfos->findAll();
 
         return $this->render('admin/projet/index.html.twig',[
-            'projets'=>$projets
+            'projets'=>$projets,
+            'informations'=>$informations
         ]);
     }
 
@@ -124,6 +178,7 @@ class IndexController extends AbstractController{
     public function edit(Projet $projet, Request $request){
         $form = $this->createForm(ProjetType::class, $projet);
         $form->handleRequest($request); //permet de gérer la requête, compare le nouvelle valeur par rapport à l'ancienne
+        $informations = $this->repositoryInfos->findAll();
 
         /* si le formulaire a été changé et qu'il est valide */
         if ($form->isSubmitted() && $form->isValid()){
@@ -134,7 +189,38 @@ class IndexController extends AbstractController{
         }
 
         return $this->render('admin/projet/edit.html.twig', [
+            'informations'=>$informations,
             'projet' =>$projet,
+            'form' => $form->createView()
+        ]);
+    }
+
+    /**
+     * Permet d'éditer un projet
+     * @Route ("/admin/projet/information/{id}", name="admin.projet.information.editInformation", methods="GET|POST")
+     * @param Information $information
+     * @param Request $request
+     * @return Response
+     * @throws ORMException
+     * @throws OptimisticLockException
+     */
+    public function editInformation(Information $information, Request $request){
+        $form = $this->createForm(InformationType::class, $information);
+        $form->handleRequest($request); //permet de gérer la requête, compare le nouvelle valeur par rapport à l'ancienne
+
+        $informations = $this->repositoryInfos->findAll();
+
+        /* si le formulaire a été changé et qu'il est valide */
+        if ($form->isSubmitted() && $form->isValid()){
+            $this->em->flush();
+            $this->addFlash('success', 'Votre bien a été modifié avec succès');
+
+            return $this->redirectToRoute('admin.projet.index');
+        }
+
+        return $this->render('admin/projet/information/editInformation.html.twig', [
+            'informations'=>$informations,
+            'information' =>$information,
             'form' => $form->createView()
         ]);
     }
@@ -159,6 +245,23 @@ class IndexController extends AbstractController{
         return $this->redirectToRoute('admin.projet.index');
     }
 
+    /**
+     * permet de supprimer un projet
+     * @Route ("/admin/projet/information/{id}", name="admin.projet.deleteInformation", methods="DELETE")
+     * @param Information $information
+     * @param Request $request
+     * @return Response
+     * @throws ORMException
+     * @throws OptimisticLockException
+     */
+    public function deleteInformation(Information $information, Request $request){
+        if ($this->isCsrfTokenValid('deleteInformation'. $information->getId(), $request->get('_token'))){
+            $this->em->remove($information);
+            $this->em->flush(); // porte les informations à la base de données
+            $this->addFlash('success', 'Votre projet a été supprimé avec succès');
 
+        }
+        return $this->redirectToRoute('admin.projet.index');
+    }
 
 }
