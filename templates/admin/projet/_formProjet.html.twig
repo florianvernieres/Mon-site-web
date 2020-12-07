@@ -1,0 +1,22 @@
+{{ form_start(form) }}
+
+<div class="row">
+    <div class="col-md-6">{{ form_row(form.Nom) }}</div>
+    <div class="col-md-6">{{ form_row(form.Categorie) }}</div>
+</div>
+<div class="row">
+    <div class="col-md-12">{{ form_row(form.Description) }}</div>
+</div>
+
+<div class="row">
+    <div class="col-md-6">{{ form_row(form.lienGit) }}</div>
+    <div class="col-md-6">{{ form_row(form.lienLinkedin) }}</div>
+</div>
+
+<div class="row">
+    <div class="col-md-6">{{ form_row(form.imageFile) }}</div>
+</div>
+
+{{ form_rest(form) }}
+<button class="btn btn-primary">{{ button|default('Enregistrer') }}</button>
+{{ form_end(form) }}

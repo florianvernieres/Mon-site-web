@@ -5,6 +5,13 @@
 {% block body %}
     <!-- Masthead-->
     <header class="masthead  text-black text-center">
+        {% if projet.filename %}
+            <img class="img-fluid" src="{{ vich_uploader_asset(projet, 'imageFile') }}" alt=""  style="width: 200px; height: auto";/>
+        {% else %}
+            <img class="img-fluid" src="{{ asset('img/portfolio/cabin.png') }}" alt="" style="width: 350px; "/>
+        {% endif %}
+
+        <h5>{{ projet.Nom }}</h5><h6>{{ projet.id }}</h6>
         <h2>{{ projet.Nom }}</h2>
         <p>{{ projet.Description }}</p>
     </header>

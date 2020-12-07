@@ -149,6 +149,20 @@ class IndexController extends AbstractController{
         ]);
     }
 
+    /**
+     * Permet de voir en détail un projet
+     * @Route("/index/projet/{id}", name="projet_showModal")
+     * @param Projet $projet
+     * @return Response
+     */
+    public function showModal(Projet $projet){
+        $informations = $this->repositoryInfos->findAll();
+        return $this->render('index/show.html.twig', [
+            'informations'=>$informations,
+            'projet' =>$projet
+        ]);
+    }
+
 
 
     /**
@@ -176,6 +190,7 @@ class IndexController extends AbstractController{
      * @throws OptimisticLockException
      */
     public function edit(Projet $projet, Request $request){
+
         $form = $this->createForm(ProjetType::class, $projet);
         $form->handleRequest($request); //permet de gérer la requête, compare le nouvelle valeur par rapport à l'ancienne
         $informations = $this->repositoryInfos->findAll();
@@ -213,7 +228,7 @@ class IndexController extends AbstractController{
         /* si le formulaire a été changé et qu'il est valide */
         if ($form->isSubmitted() && $form->isValid()){
             $this->em->flush();
-            $this->addFlash('success', 'Votre bien a été modifié avec succès');
+            $this->addFlash('success', 'Vos informations a été modifié avec succès');
 
             return $this->redirectToRoute('admin.projet.index');
         }
@@ -258,7 +273,7 @@ class IndexController extends AbstractController{
         if ($this->isCsrfTokenValid('deleteInformation'. $information->getId(), $request->get('_token'))){
             $this->em->remove($information);
             $this->em->flush(); // porte les informations à la base de données
-            $this->addFlash('success', 'Votre projet a été supprimé avec succès');
+            $this->addFlash('success', 'Vos informations ont été supprimé avec succès');
 
         }
         return $this->redirectToRoute('admin.projet.index');

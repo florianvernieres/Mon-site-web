@@ -16,7 +16,6 @@ class InformationType extends AbstractType
             ->add('description')
             ->add('description2')
             ->add('statut')
-            ->add('cv')
             ->add('adresse')
             ->add('facebook')
             ->add('github')

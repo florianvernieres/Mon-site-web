@@ -16,7 +16,7 @@ $(function () {
             var firstName = name; // For Success/Failure Message
             // Check for white space in name for Success/Fail message
             if (firstName.indexOf(" ") >= 0) {
-                firstName = name.split(" ").slice(0, -1).join("florian.vernieres@gmail.com ");
+                firstName = name.split(" ").slice(0, -1).join(" ");
             }
             $this = $("#sendMessageButton");
             $this.prop("disabled", true); // Disable submit button until AJAX call is complete to prevent duplicate messages
@@ -55,9 +55,9 @@ $(function () {
                         .append("</button>");
                     $("#success > .alert-danger").append(
                         $("<strong>").text(
-                            "Sorry " +
+                            "Désolé " +
                                 firstName +
-                                ", it seems that my mail server is not responding. Please try again later!"
+                                ", il semble que mon serveur de messagerie ne répond pas. Veuillez réessayer plus tard!"
                         )
                     );
                     $("#success > .alert-danger").append("</div>");

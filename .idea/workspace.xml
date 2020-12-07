@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="BranchesTreeState">
     <expand>
       <path>
@@ -20,18 +23,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8520be99-2e66-4ed2-83ec-467333d9669c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/templates/admin/projet/information/editInformation.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/admin/projet/information/newInformation.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/packages/liip_imagine.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Listener/ImageCacheSubscriber.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/admin/projet/_formProjet.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/MonSiteWeb.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/MonSiteWeb.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/mail/contact_me.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/mail/contact_me.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/mail/contact_me.php" beforeDir="false" afterPath="$PROJECT_DIR$/assets/mail/contact_me.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/services.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/services.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/IndexController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/IndexController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/SecurityController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/SecurityController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DataFixtures/ProjetFixtures.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataFixtures/ProjetFixtures.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Entity/Information.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Information.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Projet.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Projet.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/User.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Form/InformationType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/InformationType.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/admin/projet/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/projet/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Form/ProjetType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/ProjetType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/admin/projet/_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/projet/_form.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/admin/projet/edit.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/projet/edit.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/admin/projet/new.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/projet/new.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/index/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index/show.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -151,6 +169,11 @@
       <path value="$PROJECT_DIR$/vendor/symfony/webpack-encore-bundle" />
       <path value="$PROJECT_DIR$/vendor/doctrine/doctrine-fixtures-bundle" />
       <path value="$PROJECT_DIR$/vendor/doctrine/data-fixtures" />
+      <path value="$PROJECT_DIR$/vendor/jms/metadata" />
+      <path value="$PROJECT_DIR$/vendor/vich/uploader-bundle" />
+      <path value="$PROJECT_DIR$/vendor/imagine/imagine" />
+      <path value="$PROJECT_DIR$/vendor/symfony/templating" />
+      <path value="$PROJECT_DIR$/vendor/liip/imagine-bundle" />
     </include_path>
   </component>
   <component name="ProjectId" id="1keBGnhjxoeWamdKhna73uBdn9l" />
@@ -162,22 +185,22 @@
     <property name="DatabaseDriversLRU" value="mariadb" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Montemplate" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Programmation\Symfony\MonSiteWeb\templates\admin\projet\information" />
-      <recent name="D:\Programmation\Symfony\MonSiteWeb\templates\admin\projet" />
-      <recent name="D:\Programmation\Symfony\MonSiteWeb\src\Controller" />
-      <recent name="D:\Programmation\Symfony\MonSiteWeb\templates\admin\Projet" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Programmation\Symfony\MonSiteWeb\templates\admin\projet\information" />
       <recent name="D:\Programmation\Symfony\MonSiteWeb\assets\styles" />
       <recent name="D:\Programmation\Symfony\MonSiteWeb\assets" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Programmation\Symfony\MonSiteWeb\templates\admin\projet" />
+      <recent name="D:\Programmation\Symfony\MonSiteWeb\templates\admin\projet\information" />
+      <recent name="D:\Programmation\Symfony\MonSiteWeb\src\Controller" />
+      <recent name="D:\Programmation\Symfony\MonSiteWeb\templates\admin\Projet" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -209,7 +232,19 @@
       <workItem from="1606761722214" duration="5072000" />
       <workItem from="1606807967271" duration="27409000" />
       <workItem from="1606852490675" duration="239000" />
-      <workItem from="1606895869677" duration="7877000" />
+      <workItem from="1606895869677" duration="9173000" />
+      <workItem from="1606906480396" duration="275000" />
+      <workItem from="1606923532679" duration="5917000" />
+      <workItem from="1606930944578" duration="3194000" />
+      <workItem from="1606993200315" duration="267000" />
+      <workItem from="1606993904543" duration="171000" />
+      <workItem from="1607189191452" duration="26000" />
+      <workItem from="1607191101257" duration="1146000" />
+      <workItem from="1607247937958" duration="5975000" />
+      <workItem from="1607259774338" duration="2300000" />
+      <workItem from="1607277194922" duration="941000" />
+      <workItem from="1607355473441" duration="636000" />
+      <workItem from="1607360138749" duration="9500000" />
     </task>
     <servers />
   </component>
@@ -237,22 +272,26 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="685" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/-1920.26.1920.1040@0.0.1920.1040" timestamp="1606818285399" />
-    <state x="765" y="236" key="#com.intellij.ide.util.MemberChooser" timestamp="1606827266791">
+    <state x="765" y="236" key="#com.intellij.ide.util.MemberChooser" timestamp="1607369706674">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="765" y="236" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/-1920.26.1920.1040@0.0.1920.1040" timestamp="1606827266791" />
+    <state x="765" y="236" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/-1920.26.1920.1040@0.0.1920.1040" timestamp="1607369706674" />
     <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1606832357228">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040/-1920.26.1920.1040@0.0.1920.1040" timestamp="1606832357228" />
-    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1606763703188">
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1607277204097">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040/-1920.26.1920.1040@0.0.1920.1040" timestamp="1606763703188" />
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040/-1920.26.1920.1040@0.0.1920.1040" timestamp="1607277204097" />
     <state width="196" height="457" key="HiddenNamespacesPopup" timestamp="1606828735428">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="196" height="457" key="HiddenNamespacesPopup/0.0.1920.1040/-1920.26.1920.1040@0.0.1920.1040" timestamp="1606828735428" />
+    <state width="498" height="446" key="SwitcherDM" timestamp="1606929371639">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="498" height="446" key="SwitcherDM/0.0.1920.1040/-1920.26.1920.1040@0.0.1920.1040" timestamp="1606929371639" />
     <state x="777" y="435" width="365" height="171" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606836770634">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -265,9 +304,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="616" y="240" key="run.anything.popup/0.0.1920.1040/-1920.26.1920.1040@0.0.1920.1040" timestamp="1606835859844" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1606407851828">
+    <state x="811" y="378" width="672" height="678" key="search.everywhere.popup" timestamp="1607369874055">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.26.1920.1040@0.0.1920.1040" timestamp="1606407851828" />
+    <state x="811" y="378" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.26.1920.1040@0.0.1920.1040" timestamp="1607369874055" />
   </component>
 </project>

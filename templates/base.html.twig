@@ -9,7 +9,7 @@
 
         {% block stylesheets %}
             {{ encore_entry_link_tags('app') }}
-            <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+            <link rel="icon" type="image/x-icon" href="{{ asset('img/avataaars.svg') }}" />
             <!-- Font Awesome icons (free version)-->
             <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
             <!-- Google fonts-->
@@ -19,6 +19,7 @@
             <link href="assets/styles/styles.css" rel="stylesheet" />
         {% endblock %}
     </head>
+
 
     <body id="page-top">
         <!-- Navigation-->

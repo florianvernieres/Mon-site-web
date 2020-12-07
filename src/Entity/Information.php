@@ -4,11 +4,14 @@ namespace App\Entity;
 
 use App\Repository\InformationRepository;
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\HttpFoundation\File\File;
+
+
 
 /**
  * @ORM\Entity(repositoryClass=InformationRepository::class)
  */
-class Information
+class  Information
 {
     /**
      * @ORM\Id
@@ -16,6 +19,7 @@ class Information
      * @ORM\Column(type="integer")
      */
     private $id;
+
 
     /**
      * @ORM\Column(type="text", nullable=true)
@@ -27,10 +31,6 @@ class Information
      */
     private $statut;
 
-    /**
-     * @ORM\Column(type="object", nullable=true)
-     */
-    private $cv;
 
     /**
      * @ORM\Column(type="text", nullable=true)
@@ -101,17 +101,7 @@ class Information
         return $this;
     }
 
-    public function getCv()
-    {
-        return $this->cv;
-    }
 
-    public function setCv($cv): self
-    {
-        $this->cv = $cv;
-
-        return $this;
-    }
 
     public function getAdresse(): ?string
     {
@@ -208,4 +198,5 @@ class Information
 
         return $this;
     }
+
 }
