@@ -9,7 +9,12 @@
         <header class="masthead bg-primary text-white text-center">
             <div class="container d-flex align-items-center flex-column">
                 <!-- Masthead Avatar Image-->
-                <img  class="masthead-avatar mb-5" src="{{ asset('img/avataaars.svg')  }}" alt="ma photo"/>
+                {% for information in informations %}
+                    {% if information.filenameprofil %}
+                        <img  class="masthead-avatar mb-5" src="{{ vich_uploader_asset(information, 'imageFileProfil') }}" alt="ma photo"/>
+                    {% endif %}
+                {% endfor %}
+
 
                 <!-- Masthead Heading-->
                 <h1 class="masthead-heading text-uppercase mb-0">Florian Vernieres</h1>
@@ -45,7 +50,7 @@
                                     <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus"></i><br />Voir le projet</div>
                                 </div>
                                 {% if projet.filename %}
-                                    <img class="img-fluid" src="{{ vich_uploader_asset(projet, 'imageFile') }}" alt=""  style="width: 200px; height: auto";/>
+                                    <img class="img-fluid" src="{{ vich_uploader_asset(projet, 'imageFile') }}" alt=""  style="width: 200px; height: auto;" />
                                 {% else %}
                                     <img class="img-fluid" src="{{ asset('img/portfolio/cabin.png') }}" alt="" style="width: 350px; "/>
                                 {% endif %}
@@ -76,7 +81,7 @@
                                                     </div>
                                                     <!-- Image d'illustration du projet-->
                                                     {% if projet.filename %}
-                                                        <img class="img-fluid" src="{{ vich_uploader_asset(projet, 'imageFile') }}" alt=""  style="width: 200px; height: auto";/>
+                                                        <img class="img-fluid" src="{{ vich_uploader_asset(projet, 'imageFile') }}" alt=""  style="width: 200px; height: auto;"/>
                                                     {% else %}
                                                         <img class="img-fluid" src="{{ asset('img/portfolio/cabin.png') }}" alt="" style="width: 350px; "/>
                                                     {% endif %}
@@ -121,12 +126,16 @@
                     <div class="col-lg-4 mr-auto"><p class="lead">{% for information in informations %}{{ information.description2 }}{% endfor %} </p></div>
                 </div>
                 <!-- Bouton télécharger CV-->
-                <div class="text-center mt-4">
-                    <a class="btn btn-xl btn-outline-light" href="#">
-                        <i class="fas fa-download mr-2"></i>
-                        Télécharger mon CV
-                    </a>
-                </div>
+                {% for information in informations %}
+                    {% if information.filenamecv %}
+                        <div class="text-center mt-4">
+                            <a class="btn btn-xl btn-outline-light" href="{{ vich_uploader_asset(information, 'imageFileCV') }}">
+                                <i class="fas fa-download mr-2"></i>
+                                Télécharger mon CV
+                            </a>
+                        </div>
+                    {% endif %}
+                {% endfor %}
             </div>
         </section>
 

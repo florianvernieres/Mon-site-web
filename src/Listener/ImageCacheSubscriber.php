@@ -3,7 +3,6 @@ namespace App\Listener;
 
 use Doctrine\Common\EventSubscriber;
 use Doctrine\ORM\Event\LifecycleEventArgs;
-use Doctrine\ORM\Event\PreFlushEventArgs;
 use Doctrine\ORM\Event\PreUpdateEventArgs;
 use Liip\ImagineBundle\Imagine\Cache\CacheManager;
 use Symfony\Component\HttpFoundation\File\UploadedFile;
@@ -48,6 +47,9 @@ use Vich\UploaderBundle\Templating\Helper\UploaderHelper;
             return;
         }
         $this->cacheManager->remove($this->uploaderHelper->asset($entity,  'imageFile'));
+        $this->cacheManager->remove($this->uploaderHelper->asset($entity,  'imageFileProfil'));
+        $this->cacheManager->remove($this->uploaderHelper->asset($entity,  'imageFileCV'));
+
     }
 
     public function preUpdate(PreUpdateEventArgs $args){
@@ -58,6 +60,8 @@ use Vich\UploaderBundle\Templating\Helper\UploaderHelper;
 
         if ($entity->getImageFile instanceof UploadedFile){
             $this->cacheManager->remove($this->uploaderHelper->asset($entity,  'imageFile'));
+            $this->cacheManager->remove($this->uploaderHelper->asset($entity,  'imageFileProfil'));
+            $this->cacheManager->remove($this->uploaderHelper->asset($entity,  'imageFileProfilCV'));
         }
     }
 }

@@ -23,33 +23,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8520be99-2e66-4ed2-83ec-467333d9669c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/config/packages/liip_imagine.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Listener/ImageCacheSubscriber.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/admin/projet/_formProjet.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/MonSiteWeb.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/MonSiteWeb.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/mail/contact_me.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/mail/contact_me.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/mail/contact_me.php" beforeDir="false" afterPath="$PROJECT_DIR$/assets/mail/contact_me.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/services.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/services.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/IndexController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/IndexController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/vich_uploader.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/vich_uploader.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Entity/Information.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Information.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Projet.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Projet.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/User.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Form/InformationType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/InformationType.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Form/ProjetType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/ProjetType.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Listener/ImageCacheSubscriber.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Listener/ImageCacheSubscriber.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/admin/projet/_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/projet/_form.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/admin/projet/edit.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/projet/edit.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/admin/projet/new.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/projet/new.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/index/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/index/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index/show.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -244,7 +225,8 @@
       <workItem from="1607259774338" duration="2300000" />
       <workItem from="1607277194922" duration="941000" />
       <workItem from="1607355473441" duration="636000" />
-      <workItem from="1607360138749" duration="9500000" />
+      <workItem from="1607360138749" duration="9644000" />
+      <workItem from="1607417887992" duration="16000000" />
     </task>
     <servers />
   </component>
@@ -264,6 +246,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="552" y="178" width="816" height="729" key="#Intentions" timestamp="1607428068355">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="178" width="816" height="729" key="#Intentions/0.0.1920.1040/-1920.26.1920.1040@0.0.1920.1040" timestamp="1607428068355" />
     <state x="552" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1606378055384">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -276,10 +262,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="765" y="236" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/-1920.26.1920.1040@0.0.1920.1040" timestamp="1607369706674" />
-    <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1606832357228">
+    <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1607428665166">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040/-1920.26.1920.1040@0.0.1920.1040" timestamp="1606832357228" />
+    <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040/-1920.26.1920.1040@0.0.1920.1040" timestamp="1607428665166" />
     <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1607277204097">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -296,10 +282,15 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="777" y="435" width="365" height="171" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/-1920.26.1920.1040@0.0.1920.1040" timestamp="1606836770634" />
-    <state x="-1928" y="175" width="1605" height="828" key="dock-window-1" timestamp="1606899480842">
+    <state x="-1539" y="316" width="1621" height="778" key="dock-window-1" timestamp="1607428782836">
       <screen x="-1920" y="26" width="1920" height="1040" />
     </state>
-    <state x="-1928" y="175" width="1605" height="828" key="dock-window-1/0.0.1920.1040/-1920.26.1920.1040@0.0.1920.1040" timestamp="1606899480842" />
+    <state x="-1539" y="316" width="1621" height="778" key="dock-window-1/0.0.1920.1040/-1920.26.1920.1040@0.0.1920.1040" timestamp="1607428782836" />
+    <state x="-1665" y="407" width="1621" height="1027" key="dock-window-2" timestamp="1607432366507">
+      <screen x="-1920" y="26" width="1920" height="1040" />
+    </state>
+    <state x="-1665" y="407" width="1621" height="1027" key="dock-window-2/0.0.1920.1040/-1920.26.1920.1040@-1920.26.1920.1040" timestamp="1607432366507" />
+    <state x="-1752" y="8" width="1621" height="1027" maximized="true" key="dock-window-2/0.0.1920.1040/-1920.26.1920.1040@0.0.1920.1040" timestamp="1607431952784" />
     <state x="616" y="240" key="run.anything.popup" timestamp="1606835859844">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

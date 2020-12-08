@@ -19,6 +19,7 @@ class ProjetType extends AbstractType
             ->add('lienGit')
             ->add('lienLinkedin')
             ->add('imageFile', FileType::class, [
+                'label' => 'Image d\'illustration du projet' ,
                 'required' =>false
             ])
         ;
