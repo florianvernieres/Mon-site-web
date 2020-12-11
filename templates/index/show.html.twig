@@ -1,24 +1,45 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Mes projets{% endblock %}
+{% block title %}{{ projet.Nom }}{% endblock %}
 
 {% block body %}
-    <!-- Masthead-->
-    <header class="masthead  text-black text-center">
-        {% if projet.filename %}
-            <img class="img-fluid" src="{{ vich_uploader_asset(projet, 'imageFile') }}" alt=""  style="width: 200px; height: auto";/>
-        {% else %}
-            <img class="img-fluid" src="{{ asset('img/portfolio/cabin.png') }}" alt="" style="width: 350px; "/>
-        {% endif %}
-
-        <h5>{{ projet.Nom }}</h5><h6>{{ projet.id }}</h6>
-        <h2>{{ projet.Nom }}</h2>
-        <p>{{ projet.Description }}</p>
-    </header>
-
     <body id="page-top">
+        <!-- Masthead-->
+        <header class="masthead  text-black text-center">
+            {% if projet.filename %}
+                <img class="img-fluid" src="{{ vich_uploader_asset(projet, 'imageFile') }}" alt=""  style="width: 200px; height: auto;"/>
+                <br /><br />
+            {% else %}
+                <img class="img-fluid" src="{{ asset('img/portfolio/cabin.png') }}" alt="" style="width: 350px; "/>
+                <br /><br />
+            {% endif %}
 
-
+            <h1>{{ projet.Nom }}</h1>
+            <br />
+            <div class="container">
+                <div class="row">
+                    {% if projet.lienGit %}
+                        <div class="col-lg-6">
+                            <a href="{{ projet.lienGit }}"><i class="fab fa-github  fa-lg"></i> Dépôt github du projet</a>
+                        </div>
+                    {% endif %}
+                    {% if projet.lienLinkedin %}
+                        <div class="col-lg-6">
+                            <a href="{{ projet.lienLinkedin }}"><i class="fab fa-linkedin  fa-lg"></i> Article linkedIn du projet</a>
+                        </div>
+                    {% endif %}
+                </div>
+            </div>
+        </header>
+        <article>
+            <div class="row">
+                <div class="col-md-1"></div>
+                <div class="col-md-10">
+                    <pre style="font-family: 'Montserrat',serif; font-size: large">{{ projet.Description }}</pre>
+                </div>
+                <div class="col-md-1"></div>
+            </div>
+        </article>
     </body>
 
 {% endblock %}

@@ -15,6 +15,7 @@ class ProjetType extends AbstractType
         $builder
             ->add('Nom')
             ->add('Description')
+            ->add('miniDescription')
             ->add('Categorie')
             ->add('lienGit')
             ->add('lienLinkedin')

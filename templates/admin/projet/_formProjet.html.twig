@@ -5,16 +5,16 @@
     <div class="col-md-6">{{ form_row(form.Categorie) }}</div>
 </div>
 <div class="row">
-    <div class="col-md-12">{{ form_row(form.Description) }}</div>
-</div>
-
-<div class="row">
     <div class="col-md-6">{{ form_row(form.lienGit) }}</div>
     <div class="col-md-6">{{ form_row(form.lienLinkedin) }}</div>
 </div>
 
 <div class="row">
     <div class="col-md-6">{{ form_row(form.imageFile) }}</div>
+    <div class="col-md-6">{{ form_row(form.miniDescription) }}</div>
+</div>
+<div class="row">
+    <div class="col-md-12">{{ form_row(form.Description) }}</div>
 </div>
 
 {{ form_rest(form) }}

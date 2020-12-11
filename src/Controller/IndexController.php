@@ -150,22 +150,6 @@ class IndexController extends AbstractController{
     }
 
     /**
-     * Permet de voir en détail un projet
-     * @Route("/index/projet/{id}", name="projet_showModal")
-     * @param Projet $projet
-     * @return Response
-     */
-    public function showModal(Projet $projet){
-        $informations = $this->repositoryInfos->findAll();
-        return $this->render('index/show.html.twig', [
-            'informations'=>$informations,
-            'projet' =>$projet
-        ]);
-    }
-
-
-
-    /**
      * Page admin, permet d'administrer le site
      * @Route("/admin", name="admin.projet.index", methods="GET|POST")
      * @return Response

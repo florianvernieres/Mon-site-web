@@ -6,7 +6,6 @@ use App\Repository\ProjetRepository;
 use DateTime;
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\HttpFoundation\File\File;
-use Symfony\Component\HttpFoundation\File\UploadedFile;
 use Vich\UploaderBundle\Mapping\Annotation as Vich;
 
 /**
@@ -43,6 +42,12 @@ class Projet
      * @ORM\Column(type="text")
      */
     private $Description;
+
+    /**
+     * @ORM\Column (type="text")
+     * @var
+     */
+    private $miniDescription;
 
     /**
      * @ORM\Column(type="string", length=255, nullable=true)
@@ -83,15 +88,40 @@ class Projet
         return $this;
     }
 
+    /**
+     * @return string|null
+     */
     public function getDescription(): ?string
     {
         return $this->Description;
     }
 
+    /**
+     * @param string $Description
+     * @return $this
+     */
     public function setDescription(string $Description): self
     {
         $this->Description = $Description;
 
+        return $this;
+    }
+
+    /**
+     * @return string|null
+     */
+    public function getMiniDescription(): ?string
+    {
+        return $this->miniDescription;
+    }
+
+    /**
+     * @param string $miniDescription
+     * @return $this
+     */
+    public function setMiniDescription(string $miniDescription):self
+    {
+        $this->miniDescription = $miniDescription;
         return $this;
     }
 
@@ -186,6 +216,8 @@ class Projet
     {
         $this->updatedAt = $updatedAt;
     }
+
+
 
 
 }
