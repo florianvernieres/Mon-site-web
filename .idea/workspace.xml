@@ -23,35 +23,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8520be99-2e66-4ed2-83ec-467333d9669c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/templates/index/contact_me.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/MonSiteWeb.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/MonSiteWeb.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/mail/contact_me.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/mail/contact_me.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/mail/contact_me.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/styles/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/information/CV_Florian_Vernieres.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/information/CV_Florian_Vernieres.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/projet/1200px-Microsoft_Office_logo_(2019–present).svg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/projet/Android-Studio.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/projet/langfr-220px-Tux.svg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/IndexController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/IndexController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/SecurityController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/SecurityController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DataFixtures/InformationFixtures.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DataFixtures/ProjetFixtures.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DataFixtures/UserFixtures.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataFixtures/UserFixtures.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Projet.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Projet.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Form/ProjetType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/ProjetType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/projet/avataaars.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/startbootstrap-freelancer-gh-pages/assets/img/avataaars.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/startbootstrap-freelancer-gh-pages/assets/img/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/startbootstrap-freelancer-gh-pages/assets/img/portfolio/cabin.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/startbootstrap-freelancer-gh-pages/assets/img/portfolio/cake.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/startbootstrap-freelancer-gh-pages/assets/img/portfolio/circus.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/startbootstrap-freelancer-gh-pages/assets/img/portfolio/game.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/startbootstrap-freelancer-gh-pages/assets/img/portfolio/safe.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/startbootstrap-freelancer-gh-pages/assets/img/portfolio/submarine.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/startbootstrap-freelancer-gh-pages/assets/mail/contact_me.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/startbootstrap-freelancer-gh-pages/assets/mail/contact_me.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/startbootstrap-freelancer-gh-pages/assets/mail/jqBootstrapValidation.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/startbootstrap-freelancer-gh-pages/css/styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/startbootstrap-freelancer-gh-pages/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/startbootstrap-freelancer-gh-pages/js/scripts.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/admin/projet/_formProjet.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/projet/_formProjet.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/admin/projet/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/projet/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/index/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/index/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index/show.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -178,6 +172,7 @@
       <path value="$PROJECT_DIR$/vendor/liip/imagine-bundle" />
       <path value="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer" />
       <path value="$PROJECT_DIR$/vendor/symfony/swiftmailer-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/apache-pack" />
     </include_path>
   </component>
   <component name="ProjectId" id="1keBGnhjxoeWamdKhna73uBdn9l" />
@@ -189,7 +184,7 @@
     <property name="DatabaseDriversLRU" value="mariadb" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/build" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../MonSiteWeb" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -266,7 +261,18 @@
       <workItem from="1607621844328" duration="971000" />
       <workItem from="1607670125745" duration="167000" />
       <workItem from="1607673581807" duration="1464000" />
-      <workItem from="1607706106834" duration="1935000" />
+      <workItem from="1607706106834" duration="2333000" />
+      <workItem from="1607778906103" duration="10000" />
+      <workItem from="1607847322489" duration="3786000" />
+      <workItem from="1608054601136" duration="625000" />
+      <workItem from="1608055237827" duration="5000" />
+      <workItem from="1608311301732" duration="2264000" />
+      <workItem from="1608313770928" duration="22000" />
+      <workItem from="1608374114949" duration="6000" />
+      <workItem from="1608470431039" duration="26000" />
+      <workItem from="1608470642149" duration="68000" />
+      <workItem from="1608479129431" duration="117000" />
+      <workItem from="1608482378455" duration="27000" />
     </task>
     <servers />
   </component>
@@ -314,10 +320,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040/-1920.26.1920.1040@0.0.1920.1040" timestamp="1607428665166" />
-    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1607673597366">
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1608470706730">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040/-1920.26.1920.1040@0.0.1920.1040" timestamp="1607673597366" />
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040/-1920.26.1920.1040@0.0.1920.1040" timestamp="1608470706730" />
     <state width="196" height="457" key="HiddenNamespacesPopup" timestamp="1606828735428">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -343,9 +349,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="616" y="240" key="run.anything.popup/0.0.1920.1040/-1920.26.1920.1040@0.0.1920.1040" timestamp="1606835859844" />
-    <state x="811" y="378" width="672" height="678" key="search.everywhere.popup" timestamp="1607620997697">
+    <state x="811" y="378" width="672" height="678" key="search.everywhere.popup" timestamp="1608312500963">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="811" y="378" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.26.1920.1040@0.0.1920.1040" timestamp="1607620997697" />
+    <state x="811" y="378" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.26.1920.1040@0.0.1920.1040" timestamp="1608312500963" />
   </component>
 </project>
