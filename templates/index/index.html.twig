@@ -4,9 +4,20 @@
 
 {% block body %}
     <body id="page-top">
-
         <!-- Masthead-->
         <header class="masthead bg-primary text-white text-center">
+            {% for message in app.flashes('success') %}
+                <div class="alert alert-success">
+                    {{ message }}
+                </div>
+            {% endfor %}
+
+            {% if not form.vars.valid %}
+                <div class="alert alert-danger">
+                    Le formulaire n'a pas été rempli correctement
+                </div>
+            {% endif %}
+
             <div class="container d-flex align-items-center flex-column">
                 <!-- Masthead Avatar Image-->
                 {% for information in informations %}
@@ -14,7 +25,6 @@
                         <img  class="masthead-avatar mb-5" src="{{ vich_uploader_asset(information, 'imageFileProfil') }}" alt="ma photo"/>
                     {% endif %}
                 {% endfor %}
-
 
                 <!-- Masthead Heading-->
                 <h1 class="masthead-heading text-uppercase mb-0">Florian Vernieres</h1>
@@ -149,41 +159,39 @@
                 </div>
                 <!-- Contact Section Form-->
                 <div class="row">
-                    <div class="col-lg-8 mx-auto">
-                        <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19.-->
-                        <form id="contactForm" name="sentMessage" novalidate="novalidate">
+                    <div class="col-lg-8 mx-auto" id="contactForm">
+                        {{ form_start(form) }}
                             <div class="control-group">
-                                <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                                    <label>Nom</label>
-                                    <input class="form-control" id="name" type="text" placeholder="Nom" required="required" data-validation-required-message="Veuillez entrer votre nom." />
-                                    <p class="help-block text-danger"></p>
+                                <h5>Nom</h5>
+                                <div class="form-group floating-label-form-group controls mb-0 pb-2" >
+                                    {{ form_row(form.firstname) }}
+                                </div>
+                            </div>
+
+                            <div class="control-group">
+                                <h5>Numéro de téléphone</h5>
+                                <div class="form-group floating-label-form-group controls mb-0 pb-2" >
+                                    {{ form_row(form.phone) }}
                                 </div>
                             </div>
                             <div class="control-group">
-                                <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                                    <label>Adresse mail</label>
-                                    <input class="form-control" id="email" type="email" placeholder="Adresse mail" required="required" data-validation-required-message="Veuillez entrer votre adresse mail." />
-                                    <p class="help-block text-danger"></p>
+                                <h5>Adresse mail</h5>
+                                <div class="form-group floating-label-form-group controls mb-0 pb-2" >
+                                    {{ form_row(form.email) }}
                                 </div>
                             </div>
+
                             <div class="control-group">
-                                <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                                    <label>Numéro</label>
-                                    <input class="form-control" id="phone" type="tel" placeholder="Numéro de téléphone" required="required" data-validation-required-message="Veuillez entrer votre numéro de téléphone." />
-                                    <p class="help-block text-danger"></p>
+                                <h5>Message</h5>
+                                <div class="form-group floating-label-form-group controls mb-0 pb-2" >
+                                {{ form_row(form.message) }}
                                 </div>
                             </div>
-                            <div class="control-group">
-                                <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                                    <label>Message</label>
-                                    <textarea class="form-control" id="message" rows="5" placeholder="Message" required="required" data-validation-required-message="Veuillez entrer un message."></textarea>
-                                    <p class="help-block text-danger"></p>
-                                </div>
-                            </div>
-                            <br />
-                            <div id="success"></div>
-                            <div class="form-group"><button class="btn btn-primary btn-xl" id="sendMessageButton" type="submit">Envoyer</button></div>
-                        </form>
+                        <br />
+                        <div class="form-group">
+                            <button class="btn btn-primary btn-xl">Envoyer <i class="fas fa-share-square"></i></button>
+                        </div>
+                        {{ form_end(form) }}
                     </div>
                 </div>
             </div>

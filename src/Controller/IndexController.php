@@ -3,10 +3,13 @@
 namespace App\Controller;
 
 
+use App\Entity\Contact;
 use App\Entity\Information;
 use App\Entity\Projet;
+use App\Form\ContactType;
 use App\Form\InformationType;
 use App\Form\ProjetType;
+use App\Notification\ContactNotification;
 use App\Repository\InformationRepository;
 use App\Repository\ProjetRepository;
 use Doctrine\ORM\EntityManager;
@@ -50,9 +53,21 @@ class IndexController extends AbstractController{
     /**
      * page index du site
      * @Route("/index", name="projet.index")
+     * @param Request $request
+     * @param ContactNotification $notification
      * @return Response
      */
-    public function index(): Response {
+    public function index(Request $request, ContactNotification $notification): Response {
+        $contact = new Contact();
+        $form = $this->createForm(ContactType::class, $contact);
+        $form->handleRequest($request);
+
+        if ($form->isSubmitted() && $form->isValid()){
+            $notification->notify($contact);    //gestion de l'envoi d'email dans la classe ContactNotification
+            $this->addFlash('success', 'Votre email a bien été envoyé avec succès');
+            return $this->redirectToRoute('projet.index');
+        }
+
         $repo = $this->getDoctrine()->getRepository(Projet::class);
 
         $projets = $repo->findAll();
@@ -61,7 +76,8 @@ class IndexController extends AbstractController{
         return $this->render('index/index.html.twig', [
             'controller_name' => 'IndexController',
             'projets' => $projets,
-            'informations'=>$informations
+            'informations'=>$informations,
+            'form' => $form->createView()
         ]);
     }
 

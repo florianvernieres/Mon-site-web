@@ -1,0 +1,23 @@
+{% block title %} nouveau mail sur votre site web {% endblock %}
+{% block body %}
+    <body>
+        <table>
+            <tr>
+                <td>Nom de l'emetteur</td>
+                <td>{{ contact.firstname }}</td>
+            </tr>
+            <tr>
+                <td>Numéro de téléphone</td>
+                <td>{{ contact.phone }}</td>
+            </tr>
+            <tr>
+                <td>Adresse mail</td>
+                <td>{{ contact.email }}</td>
+            </tr>
+            <tr>
+                <td>Message</td>
+                <td>{{ contact.message }}</td>
+            </tr>
+        </table>
+    </body>
+{% endblock %}

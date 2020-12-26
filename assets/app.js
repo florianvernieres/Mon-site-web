@@ -12,8 +12,6 @@ import './styles/styles.css';
 import 'bootstrap';
 
 import './scripts.js';
-import './mail/jqBootstrapValidation.js';
-import './mail/contact_me.js';
 
 
 
