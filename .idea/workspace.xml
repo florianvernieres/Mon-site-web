@@ -23,26 +23,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8520be99-2e66-4ed2-83ec-467333d9669c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/migrations/Version20201225111316.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/avatarFlo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DataFixtures/ProjetFixtures.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Entity/Contact.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Form/ContactType.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Notification/ContactNotification.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/emails/contact.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/MonSiteWeb.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/MonSiteWeb.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/mail/contact_me.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/mail/jqBootstrapValidation.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/avataaars.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/IndexController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/IndexController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/portfolio/cabin.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/portfolio/cake.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/portfolio/circus.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/portfolio/game.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/portfolio/safe.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/portfolio/submarine.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/projet/274c.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/projet/39977.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/projet/587549c91063eb350d61bef7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/projet/doctor-5005369_1280.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/projet/samsung-gear-vr.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/projet/symfony_black_03.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/index/contact_me.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/index/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index/show.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -279,7 +277,11 @@
       <workItem from="1608482378455" duration="27000" />
       <workItem from="1608892959141" duration="3085000" />
       <workItem from="1608915893036" duration="7692000" />
-      <workItem from="1608973997247" duration="19289000" />
+      <workItem from="1608973997247" duration="24501000" />
+      <workItem from="1609086214037" duration="658000" />
+      <workItem from="1609090877666" duration="1207000" />
+      <workItem from="1609168713864" duration="6554000" />
+      <workItem from="1609179183022" duration="5251000" />
     </task>
     <servers />
   </component>
