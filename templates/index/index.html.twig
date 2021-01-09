@@ -56,11 +56,11 @@
                     {% for projet in projets | reverse %}
                         <div class="col-md-6 col-lg-4 mb-5 ">
                             <a class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal{{ projet.id }}" >
-                                <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-75">
+                                <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-75 " style="margin-left: 13%">
                                     <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus"></i><br />{{ projet.Nom }}</div>
                                 </div>
                                 {% if projet.filename %}
-                                    <img class="img-fluid" src="{{ vich_uploader_asset(projet, 'imageFile') }}" alt=""  style="width: 250px; height: auto;" />
+                                    <img class=" img-fluid" style="width: 150px;height: auto; margin-left: 25%;" src="{{ vich_uploader_asset(projet, 'imageFile') }}" alt="illustration du projet" />
                                 {% endif %}
                             </a>
                         </div>
@@ -86,10 +86,10 @@
                                                     </div>
                                                     <!-- Image d'illustration du projet-->
                                                     {% if projet.filename %}
-                                                        <img class="img-fluid" src="{{ vich_uploader_asset(projet, 'imageFile') }}" alt=""  style="width: 200px; height: auto;"/>
+                                                        <img class="img-fluid" style="height: 150px; width: auto" src="{{ vich_uploader_asset(projet, 'imageFile') }}" alt="illustration du projet" />
                                                     {% endif %}
                                                     <!-- Description rapide du projet -->
-                                                    <p class="mb-5" style="font-size: x-large;">{{ projet.miniDescription }}</p>
+                                                    <p class="mb-5 texte">{{ projet.miniDescription }}</p>
 
                                                     <a href="{{ path('projet_show',{'id': projet.id} ) }}" class="btn btn-primary btn-xl" >
                                                         <i class="fas fa-times fa-eye"></i>

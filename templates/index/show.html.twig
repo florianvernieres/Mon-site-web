@@ -7,7 +7,7 @@
         <!-- Masthead-->
         <header class="masthead  text-black text-center">
             {% if projet.filename %}
-                <img class="img-fluid" src="{{ vich_uploader_asset(projet, 'imageFile') }}" alt=""  style="width: 200px; height: auto;"/>
+                <img class="img-fluid" style="width: auto; height: 150px; margin-left: 5%;" src="{{ vich_uploader_asset(projet, 'imageFile') }}" alt="Illustration projet" />
                 <br /><br />
             {% endif %}
 
@@ -16,13 +16,13 @@
             <div class="container">
                 <div class="row">
                     {% if projet.lienGit %}
-                        <div class="col-lg-6">
-                            <a href="{{ projet.lienGit }}" style="font-size: x-large"><i class="fab fa-github  fa-lg"></i> Dépôt github du projet</a>
+                        <div class="col-lg-6" >
+                            <a style="font-size: large" href="{{ projet.lienGit }}"><i class="fab fa-github  fa-lg"></i> Dépôt github du projet</a>
                         </div>
                     {% endif %}
                     {% if projet.lienLinkedin %}
                         <div class="col-lg-6">
-                            <a href="{{ projet.lienLinkedin }}" style="font-size: x-large;"><i class="fab fa-linkedin  fa-lg"></i> Article LinkedIn du projet</a>
+                            <a style="font-size: large" href="{{ projet.lienLinkedin }}" ><i class="fab fa-linkedin  fa-lg"></i> Article LinkedIn du projet</a>
                         </div>
                     {% endif %}
                 </div>
@@ -32,7 +32,7 @@
             <div class="row">
                 <div class="col-md-1"></div>
                 <div class="col-md-10">
-                    <pre style="font-family: 'Montserrat',serif; font-size: x-large;">{{ projet.Description }}</pre>
+                    <pre style="font-family:Montserrat,serif; text-align: justify; font-size: large">{{ projet.Description }}</pre>
                 </div>
                 <div class="col-md-1"></div>
             </div>
